@@ -1,4 +1,3 @@
-PROVIDER = 'imap'
-SYNC_MONITOR_CLS = 'ImapSyncMonitor'
+from inbox.mailsync.backends.imap import common
 
-from inbox.mailsync.backends.imap.imap import *
+__all__ = ['common']
